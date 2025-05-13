@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title>Idadismo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/test.css">
+	<link href="https://fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/rawline.css">
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<style>
+		#conteudo {
+			display: none;
+		}
+	</style>
+	<style>
+		.list-group {
+			list-style: none;
+		}
+	</style>
+
+	<style>
+		.card-custom {
+			background-color: #503765;
+		}
+
+		.btn-custom {
+			background-color: #D1A7E1;
+			color: white;
+		}
+
+		.btn-custom:hover {
+			background-color: #B085C2;
+		}
+	</style>
+	<style>
+		.text-title-responsive span {
+			font-size: 28px;
+			white-space: nowrap;
+			/* Impede quebra de linha */
+		}
+
+		@media (max-width: 768px) {
+			.text-title-responsive span {
+				font-size: 20px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.text-title-responsive span {
+				font-size: 16px;
+			}
+		}
+	</style>
+
+	<style>
+		@keyframes floatAnimation {
+			0% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-5px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+
+		#sidebarCollapse {
+			animation: floatAnimation 2s infinite ease-in-out;
+		}
+	</style>
+	<style>
+		/* Estilo padrão para telas grandes */
+		#banner {
+			width: 100%;
+			height: auto;
+		}
+
+		/* Trocar imagem em telas menores */
+		@media (max-width: 768px) {
+			#banner {
+				content: url('../assets/images/bannermod1mobile.png');
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="content">
+		<!--banner principal-->
+
+		<div class="banner" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="150">
+			<img src="../assets/images/bannermod1pc2.png" alt="banner" class="responsive" id="banner">
+		</div>
+	</div>
+
+	<div>
+
+		<!--banner principal-->
+
+		<!--sidebar-->
+		<nav id="sidebar">
+			<div class="custom-menu" style=" border-radius: 50px;">
+				<button type="button" id="sidebarCollapse" class="btn btn-primary">
+					<i class="fa bi bi-arrow-left-right"></i>
+					<span class="sr-only">Toggle Menu</span>
+				</button>
+			</div>
+
+			<div class="p-3 h-100 sticky-top_x text-white" style="background-color: #36254e;">
+
+
+
+				<div class="card text-white text-center mb-4" style="background-color: #36254e;">
+					<div class="card-body p-3">
+						<p class="fontebar">
+							<b>Curso</b>
+						</p>
+
+						<p class="fonteconteudobar">
+							<b>Literacia em idadismo estrutural e discriminação por idade</b>
+						</p>
+					</div>
+				</div>
+				<hr style="background-color: white;">
+
+
+				<ul class="list-group fontebar px-2" style="background-color: #7c698c;">
+					<li class="mb-3">
+						<a href="#homeSubmenu" class="dropdown-toggle text-white" data-toggle="collapse"
+							aria-expanded="false">
+							<strong>Módulos</strong>
+						</a>
+
+						<ul class="list-group fonteconteudo collapse show" id="homeSubmenu">
+							<li class="list-group">
+								<a href="../index.html" class="text-white">
+									<i class="bi bi-book-half"></i> Apresentação
+								</a>
+							</li>
+							<li class="list-group">
+								<a href="../modulo1/apresentacao.html" class="text-white">
+									<i class="bi bi-book-half"></i> Módulo 1
+								</a>
+							</li>
+							<li class="list-group">
+								<a href="../modulo2/apresentacao2.html" class="text-white">
+									<i class="bi bi-book-half fonteconteudo"></i> Módulo 2
+								</a>
+							</li>
+							<li class="list-group">
+								<a href="../modulo3/aula1.html" class="text-white">
+									<i class="bi bi-book-half"></i> Módulo 3
+								</a>
+							</li>
+							<li class="list-group">
+								<a href="../modulo4/aula1.html" class="text-white">
+									<i class="bi bi-book-half"></i> Módulo 4
+								</a>
+							</li>
+							<li class="list-group">
+								<a href="../modulo5/aula1.html" class="text-white">
+									<i class="bi bi-book-half"></i> Módulo 5
+								</a>
+							</li>
+						</ul>
+					</li>
+
+
+
+					<li>
+						<a href="#pageSubmenu" class="dropdown-toggle text-white" data-toggle="collapse"
+							aria-expanded="false">
+							<strong>Aulas</strong>
+						</a>
+						<ul class="list-group overflow-auto custom-scrollbar collapse" id="pageSubmenu">
+							<li class="list-group">
+								<a href="../modulo1/aula1.html" class="text-white">Aula 1 – O que é idadismo?</a>
+							</li>
+							<li class="list-group fonteconteudo">
+								<a href="../modulo1/aula2.html" class="text-white">
+									<p>Aula 2 - Simone de Beauvoir e a análise da relação entre capitalismo e
+										discriminação das pessoas idosas.</p>
+								</a>
+							</li>
+							<li class="list-group">
+								<a href="../modulo1/aula3.html" class="text-white">Aula 3 - Mitos do idadismo</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#infoSubmenu" class="dropdown-toggle text-white" data-toggle="collapse"
+							aria-expanded="false">
+							<strong>Informações</strong>
+						</a>
+						<ul class="list-group collapse fonteconteudo" id="infoSubmenu">
+							<li class="list-group">
+								<a href="#" class="text-white" data-bs-toggle="modal"
+									data-bs-target="#sobreAutoresModal">
+									<i class="bi bi-info-circle"></i> Sobre autores
+								</a>
+							</li>
+
+							<!-- Modal -->
+							<div class="modal fade" id="sobreAutoresModal" tabindex="-1"
+								aria-labelledby="sobreAutoresModalLabel" aria-hidden="true">
+								<div class="modal-dialog  modal-xl">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="sobreAutoresModalLabel">Sobre os Autores</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+										<div class="modal-body fonteconteudo ">
+											<p style="color: #000000;">
+												<strong>André Luiz da Silva Sobrinho</strong><br>
+												Doutor em Ciências Sociais (PUC-Rio), Mestre em Educação (UFF) e
+												Bacharel em Ciências
+												Sociais (UFRN). Atua como Tecnologista em Saúde Pública na Fiocruz, com
+												experiência em
+												educação, pesquisa e gestão de projetos socioeducativos. Seus temas de
+												interesse incluem
+												juventudes, políticas públicas, gerações, movimentos sociais e saúde
+												coletiva.<br><br>
+
+												<strong>Daiany Cris Silva</strong><br>
+												Cientista Social (UEM), professora de Sociologia e pesquisadora. Mestre
+												em Ciências Sociais
+												(UEM), atua como discente na rede de educação básica de Roraima e na
+												Agenda Jovem da
+												Fiocruz. Pesquisa geração, gênero, juventude e envelhecimento, com foco
+												em políticas
+												públicas para a população jovem.<br><br>
+
+												<strong>Dalia Elena Romero Montilla</strong><br>
+												Socióloga (UCAB-Venezuela), mestre em Demografia (Colégio de México) e
+												doutora em Saúde
+												Pública (ENSP/FIOCRUZ). Pesquisadora do LIS/ICICT/Fiocruz, coordena o
+												GISE-FIOCRUZ. Seus
+												temas de interesse incluem envelhecimento, mortalidade e monitoramento
+												de indicadores de
+												saúde.<br><br>
+
+												<strong>José Luiz Telles de Almeida</strong><br>
+												Médico (UFF), mestre em Saúde Coletiva (UERJ) e doutor em Saúde Pública
+												(ENSP/FIOCRUZ).
+												Pesquisador Titular da Fiocruz, foi Diretor no Ministério da Saúde
+												(2009-2011). Especialista
+												em bioética, envelhecimento e políticas de saúde.<br><br>
+
+												<strong>Larissa Picinato Mazuchelli</strong><br>
+												Doutora em Linguística (UNICAMP) com pós-doutorado na PUC-SP, pesquisa
+												afasia,
+												envelhecimento e educação linguística. Coordena o GELEP/UNICAMP. Atua no
+												Observatório do
+												Idadismo (UFBA), promovendo formação anti-idadista.<br><br>
+
+												<strong>Marcus Vinicius Borges Oliveira</strong><br>
+												Doutor em Linguística (UNICAMP), mestre em Letras e fonoaudiólogo
+												(UFBA). Professor da UFBA
+												e do PPG em Educação. Atua no Observatório do Idadismo, pesquisa
+												linguagem, memória,
+												envelhecimento, idadismo, autismo e infância em uma perspectiva
+												histórico-cultural.<br><br>
+
+												<strong>Nathalia Andrade de Souza</strong><br>
+												Cientista Social (UFRJ), mestre e doutoranda em Informação e Comunicação
+												em Saúde
+												(PPGICS/FIOCRUZ). Pesquisadora do GISE/LIS/ICICT/FIOCRUZ, estuda o
+												cuidado familiar
+												invisibilizado, envelhecimento, idadismo e monitoramento de indicadores
+												de saúde.<br><br>
+
+												<strong>Tatiana de Lucena Torres</strong><br>
+												Psicóloga, mestre e doutora em Psicologia (UFSC) com pós-doutorado
+												(UFPB). Professora da
+												UFPB e pesquisadora em psicologia social do trabalho, estuda
+												envelhecimento, estereótipos,
+												saúde mental e trabalhos invisibilizados. Integra diversos grupos de
+												pesquisa nacionais e
+												internacionais.
+											</p>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">Fechar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<li class="list-group">
+								<a href="#" class="text-white" data-bs-toggle="modal"
+									data-bs-target="#materialComplementarModal">
+									<i class="bi bi-info-circle"></i> Material complementar
+								</a>
+							</li>
+
+							<!-- Modal -->
+							<div class="modal fade" id="materialComplementarModal" tabindex="-1"
+								aria-labelledby="materialComplementarModalLabel" aria-hidden="true">
+								<div class="modal-dialog  modal-xl">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="materialComplementarModalLabel">Material
+												Complementar</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+										<div class="modal-body fonteconteudo">
+											<p style="color: black;">
+												<strong>Material complementar</strong><br><br>
+
+												<strong>Dórea, Egidio Lima.</strong> Idadismo: Um mal universal pouco
+												percebido. São
+												Leopoldo, RS: Editora Unisinos, 2021.<br>
+												<a style="color:blue ;"
+													href="https://books.google.com.br/books?hl=pt-BR&amp;lr=&amp;id=h8Y5EAAAQBAJ&amp;oi=fnd&amp;pg=PT3&amp;dq=idadismo+brasil&amp;ots=wF6RHmI5Fj&amp;sig=LWvQoBWeMIJXfaeeP8lPZ1M088Q#v=onepage&amp;q=idadismo%20brasil&amp;f=false"
+													target="_blank">https://books.google.com.br/books?hl=pt-BR&amp;lr=&amp;id=h8Y5EAAAQBAJ&amp;oi=fnd&amp;pg=PT3&amp;dq=idadismo+brasil&amp;ots=wF6RHmI5Fj&amp;sig=LWvQoBWeMIJXfaeeP8lPZ1M088Q#v=onepage&amp;q=idadismo%20brasil&amp;f=false</a><br><br>
+
+												<strong>Romero, Dalia, e Andrade, Nathalia.</strong> “Velho, velha?
+												Velha é a discriminação
+												e o idadismo – Pós-tudo”. Radis Comunicação e Saúde (blog), 26 de junho
+												de 2023.<br>
+												<a style="color: blue;"
+													href="https://radis.ensp.fiocruz.br/opiniao/pos-tudo/velho-velha-velha-e-a-discriminacao-e-o-idadismo/"
+													target="_blank">https://radis.ensp.fiocruz.br/opiniao/pos-tudo/velho-velha-velha-e-a-discriminacao-e-o-idadismo/</a><br><br>
+
+												<strong>Romero Montilla, D. E., Souza, N. A. de, &amp; Marques, A. P.
+													(2024).</strong>
+												Idadismo nos meios de comunicação no contexto da pandemia de covid-19:
+												revisão integrativa.
+												Revista Eletrônica De Comunicação, Informação &amp; Inovação Em Saúde,
+												18(4), 1002–1019.<br>
+												<a style="color: blue;"
+													href="https://doi.org/10.29397/reciis.v18i4.4031"
+													target="_blank">https://doi.org/10.29397/reciis.v18i4.4031</a><br><br>
+
+												<strong>Torres, Tatiana De Lucena, Brigido Vizeu Camargo, Andréa Barbará
+													Boulsfield, e
+													Antônia Oliveira Silva.</strong> “Representações sociais e crenças
+												normativas sobre
+												envelhecimento”. Ciência &amp; Saúde Coletiva 20, n o 12 (dezembro de
+												2015): 3621–30.<br>
+												<a style="color: blue;"
+													href="https://doi.org/10.1590/1413-812320152012.01042015"
+													target="_blank">https://doi.org/10.1590/1413-812320152012.01042015</a>
+											</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">Fechar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<li class="list-group">
+								<a class="fonteconteudo" href="#" class="text-white" data-bs-toggle="modal"
+									data-bs-target="#referenciasModal">
+									<i class="bi bi-info-circle"></i> Referências bibliográficas
+								</a>
+							</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<!-- Modal -->
+						<div class="modal fade" id="referenciasModal" tabindex="-1"
+							aria-labelledby="referenciasModalLabel" aria-hidden="true">
+							<div class="modal-dialog  modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="materialComplementarModalLabel">Referências
+											Bibliográficas</h5>
+
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body fonteconteudo">
+										<p class="fonteconteudo" style="color: #000000;"> <b> Módulo 1</b><br><br>
+											BEAUVOIR, Simone de. A velhice. Rio de Janeiro: Nova Fronteira, 1990.<br><br>
+
+									
+											BUTLER, R. N. Age-ism: another form of bigotry. The Gerontologist, v. 9, n.
+											4,
+											p. 243–246, 1 dez. 1969. Disponível em:
+											<a style="color: blue;" href="https://doi.org/10.1093/geront/9.4_Part_1.243"
+												target="_blank">https://doi.org/10.1093/geront/9.4_Part_1.243</a>.
+											Acesso em: 18 mar. de
+											2025.<br><br>
+
+
+
+											CASTRO, Gisela G. S. O idadismo como viés cultural: refletindo sobre a
+											produção de sentidos para a velhice em nossos dias. Galáxia (São Paulo), n.
+											31, p. 79–91, abr. 2016. Disponível em: <a
+												href="https://doi.org/10.1590/1982-25542016120675" target="_blank"
+												style="color:blue;">
+												https://doi.org/10.1590/1982-25542016120675</a>. Acesso em: 18 mar. de
+												2025.<br><br>
+
+												CASTRO, Gisela G. S. Precisamos discutir o idadismo na comunicação.
+												Comunicação &amp; Educação, v. 20, n. 2, p. 101–114, 2015.<br><br>
+
+
+												DÓREA, Egidio Lima. Idadismo: um mal universal pouco percebido. São
+												Leopoldo: Unisinos, 2021.<br><br>
+												
+												ELIAS, Norbert. A solidão dos moribundos seguido de envelhecer e morrer.
+												Rio
+												de Janeiro: Zahar, 2001.<br><br>
+												
+												MOREIRA, Maria José Guardado. Como envelhecem os portugueses:
+												envelhecimento, saúde, idadismo. Lisboa: Fundação Francisco Manuel dos
+												Santos, 2020.<br><br><br>
+
+												<b>	Módulo 2 </b><br><br>
+												SAWAIA, B. et al. As artimanhas da exclusão: análise psicossocial e
+												ética da
+												desigualdade social. 2. ed. Petrópolis: Vozes, 2001.<br><br>
+
+												BRASIL. Ministério dos Direitos Humanos e da Cidadania. Guia para uma
+												comunicação responsável sobre a pessoa idosa. 2023.<br><br>
+
+												BORGES, C. C.; MAGALHÃES, A. S. Laços intergeracionais no contexto
+												contemporâneo. Estudos de Psicologia, v. 16, n. 2, p. 171-177, maio-ago.
+												2011.<br><br>
+
+
+												CHRISTO, S. M. An exploration of intergenerational exchanges between
+												grandparents and their older grandchildren. 2009. Tese (Doutorado) —
+												Programa de Pós-Graduação em Educação, Broke University, 2009.<br><br>
+
+
+												CRP – CONSELHO REGIONAL DE PSICOLOGIA. Ageísmo e a prática
+												profissional da/o psicóloga/o. Bahia: Conselho Regional de Psicologia,
+												2021.<br><br>
+
+												DIETZ, M.; WALWEI, U. Germany—No country for old workers? Zeitschrift
+												für
+												ArbeitsmarktForschung, v. 44, n. 4, p. 363-376, 2011.<br><br>
+
+												FRANÇA, L. H. F. P.; SILVA, A. M. T. B.; BARRETO, M. S. L. Programas
+												intergeracionais: quão relevantes eles podem ser para a sociedade
+												brasileira?
+												Revista Brasileira de Geriatria e Gerontologia, v. 13, n. 3, p. 519-531,
+												2010.<br><br>
+
+
+												GOLDANI, A. M. &quot;Ageismo&quot; no Brasil: o que significa? Quem
+												pratica? O que
+												fazer com isto? Revista Brasileira de Estudos de População, v. 27, n. 2,
+												dez.
+												2010. Disponível em:<a
+													href="https://doi.org/10.1590/S0102-30982010000200009"
+													style="color:blue;">https://doi.org/10.1590/S0102-30982010000200009</a>.
+												Acesso em: 18 mar. de 2025.<br><br>
+
+
+												HIRATA, H. O trabalho de cuidado: comparando Brasil, França e Japão. SUR
+												24, v. 13, n. 24, p. 53-64, 2016.<br><br>
+
+
+												JESUÍNO, J. C.; TORRES, T. L. Contribuições para uma gerontologia
+												crítica. In:
+												SILVA, A. O.; CAMARGO, B. V. (Org.). Representações sociais do
+												envelhecimento e da saúde. Natal: EDUFRN, 2017. cap. 2, p. 59-83.<br><br>
+
+
+												KYDD, A.; FLEMING, A. Ageism and age discrimination in health care: Fact
+												or
+												fiction? A narrative review of the literature. Maturitas, 2015.<br><br>
+
+
+												MARTINS, C. R. M.; CAMARGO, B. V.; BIASUS, F. Representações sociais do
+												idoso e da velhice para diferentes faixas etárias. Universitas
+												Psychologica, v. 8,
+												n. 3, p. 831-847, 2009.<br><br>
+
+
+												MEERTENS, R. W.; PETTIGREW, T. F. Subtle prejudice: Really prejudice?
+												The
+												Public Opinion Quarterly, v. 61, n. 1, Special Issue on Race, p. 54-71,
+												1997.<br><br>
+
+
+												OPAS – ORGANIZAÇÃO PAN-AMERICANA DE SAÚDE. Relatório mundial
+												sobre o idadismo. Washington, D.C., 2022. Disponível em:
+												<a href="https://doi.org/10.37774/9789275724453"
+													style="color:blue;">https://doi.org/10.37774/9789275724453</a>.
+												Acesso em: 18 mar.
+												de 2025.<br><br>
+
+
+												PEREIRA, C. R.; VALA, J. A legitimação da discriminação em diferentes
+												contextos normativos. In: TECHIO, E. M.; LIMA, M. E. O. (Org.). Cultura
+												e
+												produção das diferenças: estereótipos e preconceito no Brasil, Espanha e
+												Portugal. Brasília: Technopolitik, 2011. p. 363-404.<br><br>
+
+
+												PETTIGREW, T. F.; MEERTENS, R. W. Subtle and blatant prejudice in
+												Western
+												Europe. European Journal of Social Psychology, v. 25, n. 1, p. 57-75,
+												1995.<br><br>
+
+
+												RIOS, F. O que é interseccionalidade e qual sua importância para a
+												questão
+												racial? Nexo Políticas Públicas, 2021.<br><br>
+
+
+										
+												SÃO JOSÉ, J. M. S. et al. Ageism in health care: A systematic review of
+												operational definitions and inductive conceptualizations. The
+												Gerontologist, v.
+												59, n. 2, p. e98-e108, 2019. Disponível em:
+												<a href="https://doi.org/10.1093/geront/gnx020"
+													style="color:blue;">https://doi.org/10.1093/geront/gnx020</a>.
+												Acesso em: 18 mar. de
+												2025.<br><br>
+
+												SAWAIA, B. et al. As artimanhas da exclusão: análise psicossocial e
+												ética da
+												desigualdade social. 2. ed. Petrópolis: Vozes, 2001.<br><br>
+
+
+												SEARS, D. O.; HENRY, P. J. The origins of symbolic racism. Journal of
+												Personality and Social Psychology, v. 85, n. 2, p. 259-275, 2003.<br><br>
+
+												TAJFEL, H.; TURNER, J. C. The social identity theory of intergroup
+												behavior. In:
+												WORCHEL, S.; AUSTIN, W. G. (Org.). Psychology of Intergroup Relations.
+												Chicago: Nelson Hall, 1986. p. 7-24.<br><br>
+
+
+												TAJFEL, H. Social psychology of intergroup relations. Annual Review of
+												Psychology, v. 33, n. 1, p. 1-39, 1982.<br><br>
+
+												TORRES, T. L.; CAMARGO, B. V.; BOULSFIELD, A. B. Estereótipos sociais do
+												idoso para diferentes grupos etários. Psicologia: Teoria e Pesquisa
+												(Brasília.
+												Online), v. 32, p. 209-218, 2016.<br><br>
+
+												TORRES, T. L.; CAMARGO, B. V.; BOULSFIELD, A. B.; SILVA, A. O.
+												Representações sociais e crenças normativas sobre envelhecimento.
+												Ciência &amp;
+												Saúde Coletiva, v. 20, p. 3621-3630, 2015.<br><br>
+
+
+												ZHOU et al. Understanding care needs of older adults with disabilities:
+												A
+												scoping review. J Multidiscip Health, n. 17, p. 2331–2350, 2024.
+												Disponível em:
+												<a href="https://doi.org/10.2147/JMDH.S454985"
+													style="color:blue;">https://doi.org/10.2147/JMDH.S454985</a>. Acesso
+												em: 18 mar. de
+												2025.<br><br>
+
+												<b>	Módulo 3 </b></b><br><br>
+												ARIÈS, P. História social da criança e da família. 2. ed. Rio de
+												Janeiro: LTC,
+												1981.<br><br>
+
+
+												ARIOVICH, L. La juventud es más que una palabra. 2. ed. In: MARGULIS, M.
+												(Org.). Buenos Aires: Biblos, 1996.
+												CASTRO, G. G. S. O idadismo como viés cultural: refletindo sobre a
+												produção
+												de sentidos para a velhice em nossos dias. Galáxia (São Paulo), n. 32,
+												p. 79-
+												91, abr. 2016.<br><br>
+
+
+												DA SILVA ALVES, M. E.; DE ARAÚJO, L. F. Interseccionalidade, raça e
+												sexualidade: compreensões para a velhice de negros LGBTI+. Revista de
+												Psicologia e Interdisciplinaridade, v. 12, n. 2, p. 161, 31 ago. 2020.<br><br>
+
+
+												DÓREA, E. L. Idadismo: um mal universal pouco percebido. São Leopoldo,
+												RS:
+												Editora Unisinos, 2021. Disponível em:
+												<a href="https://books.google.com.br/books?hl=pt-BR&amp;lr=&amp;id=h8Y5EAAAQBAJ&amp;oi=fnd&amp;pg=PT3&amp;dq=idadismo+brasil"
+													style="color:blue;">https://books.google.com.br/books?hl=pt-BR&amp;lr=&amp;id=h8Y5EAAAQBAJ&amp;oi=fnd&amp;pg=PT3&amp;dq=idadismo+brasil</a>.
+												Acesso
+												em: 18 mar. de 2025.<br><br>
+
+
+												MEDEIROS, J. W. D. C.; VIEIRA, K. F. L.; FERREIRA, M. D. L.; LUCENA, A.
+												L.
+												R. D. Percepção de adultos jovens acerca do envelhecimento. Revista de
+												Saúde Digital, v. 10, n. 17, p. e68101724176, 21 dez. 2021.<br><br>
+
+
+												ROMERO, D.; ANDRADE. Velho, velha? Velha é a discriminação e o idadismo
+												– Pós-tudo. Radis Comunicação e Saúde, 2023. Disponível em:
+												<a href="https://radis.ensp.fiocruz.br/opiniao/pos-tudo/velho-velha-velha-e-a-discriminacao-e-o-idadismo/"
+													style="color:blue;">https://radis.ensp.fiocruz.br/opiniao/pos-tudo/velho-velha-velha-e-a-discriminacao-e-o-idadismo/</a>.
+												Acesso em: 30 jan. 2025.<br><br>
+
+												SOBRINHO, A.; SOUZA, E. R. de; NJAINE, K.; NASCIMENTO, M.;
+												MONTEIRO, S. S. Condição juvenil na América Latina: demandas e
+												enfrentamentos às iniquidades em saúde. Ciência &amp; Saúde Coletiva, v.
+												26, n. 7,
+												p. 2562-2563, 2021. Disponível em:
+												<a href="https://www.scielo.br/j/csc/a/MRGMqFsv5D9rqLTfsdXNVMv/"
+													style="color:blue;">https://www.scielo.br/j/csc/a/MRGMqFsv5D9rqLTfsdXNVMv/</a>.
+												Acesso em: 18
+												mar. 2025.<br><br>
+
+											<b>Módulo 4 </b> <br><br>
+												BAKHTIN, M. Para uma filosofia do ato responsável. São Carlos, SP: Pedro
+												&amp;
+												João Editores, 2010.<br><br>
+
+												BUTLER, R. N. Age-ism: another form of bigotry. Gerontologist, v. 9, n.
+												4, p.
+												243–246, 1969. Disponível em: <a
+													href="https://doi.org/10.1093/geront/9.4_Part_1.243"
+													style="color:blue;">https://doi.org/10.1093/geront/9.4_Part_1.243</a>.
+												Acesso em: 18 mar. de 2025.<br><br>
+
+												CEBRAP – Centro Brasileiro de Análise e Planejamento. Envelhecimento e
+												desigualdades raciais. Org.: VIEIRA, P. São Paulo: Cebrap, 2023.
+												Disponível
+												em: <a
+													href="https://cebrap.org.br/wp-content/uploads/2023/06/desigualdades_envelhecimento_relatorio.pdf"
+													style="color:blue;">https://cebrap.org.br/wp-content/uploads/2023/06/desigualdades_envelhecimento_relatorio.pdf</a>
+												. Acesso
+												em: 18 mar. de 2025.<br><br>
+
+												
+												COLLINS, P. H.; BILGE, S. Interseccionalidade. Tradução de Rane Souza.
+												São
+												Paulo: Boitempo, 2021.<br><br>
+
+
+												KALACHE, A. Envelhecimento, velhices e interseccionalidades. Revista
+												Brasileira de Geriatria e Gerontologia, v. 26, 2023. Disponível em:
+												<a href="https://www.scielo.br/j/rbgg/a/8KrNn96T5fjxgYJt8jLLNsS/?lang=pt"
+													style="color:blue;">https://www.scielo.br/j/rbgg/a/8KrNn96T5fjxgYJt8jLLNsS/?lang=pt</a>.
+												Acesso em:
+												18 mar. de 2025.<br><br>
+
+												OLIVEIRA, M. V. B. et al. A idade não é um problema, o idadismo sim.
+												Salvador: ESDEP, 2024. Disponível em:<a
+													href="https://www.defensoria.ba.def.br/wp-content/uploads/2024/06/sanitize_100624-081201.pdf"
+													style="color:blue;">https://www.defensoria.ba.def.br/wp-content/uploads/2024/06/sanitize_100624-081201.pdf</a>
+												. Acesso em: 18 mar. de
+												2025.<br><br>
+
+												OLIVEIRA, M. V. B.; MAZUCHELLI, L. P. Responsabilidade intergeracional e
+												pandemia de covid-19. Bakhtiniana. Revista de Estudos do Discurso, v.
+												16, n.
+												4, p. 29–52, 2021. Disponível em: <a
+													href="http://dx.doi.org/10.1590/2176-457351679"
+													style="color:blue;">http://dx.doi.org/10.1590/2176-457351679</a>.
+												Acesso em: 18 mar. de 2025.<br><br>
+
+												ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. Relatório mundial sobre o
+												idadismo. Washington, D.C., 2022. Licença: CC BY-NC-SA 3.0 IGO.
+												Disponível
+												em:<a href="https://doi.org/10.37774/9789275724453"
+													style="color:blue;">https://doi.org/10.37774/9789275724453</a>
+												. Acesso em: 18 mar. de 2025.<br><br>
+
+												ROUDOM, F. M. et al. Fatores associados às desigualdades das condições
+												sociais na saúde de idosos brancos, pardos e pretos na cidade de São
+												Paulo,
+												Brasil. Ciência &amp; Saúde Coletiva, v. 28, n. 3, p. 897-907, 2023.
+												Disponível em:
+												<a href="https://doi.org/10.1590/1413-81232023283.08582022"
+													style="color:blue;">https://doi.org/10.1590/1413-81232023283.08582022</a>.
+												Acesso
+												em: 18 mar. de
+												2025.<br><br>
+
+
+												VAN DIK. The othering of old age: insights from postcolonial studies.
+												Journal of
+												Aging Studies, v. 39, p. 109-120, 2016.
+												VENDRAMIN, C. Repensando mitos contemporâneos: o capacitismo. In:
+												Simpósio Internacional Repensando Mitos Contemporâneos, 3., 2019,
+												Campinas, SP. Anais [...]. Campinas, SP: UNICAMP/SOFIA, 2019. p. 16-25.
+												Disponível em:
+												<a href="https://eadeje.tse.jus.br/pluginfile.php/176765/mod_resource/content/1/Capaciti-smo.pdf"
+													style="color:blue;">https://eadeje.tse.jus.br/pluginfile.php/176765/mod_resource/content/1/Capaciti-smo.pdf</a>.
+												Acesso em: 11 set. 2024.<br><br>
+
+											<b>		Módulo 5  </b>	   <br><br>
+												MANSO, M. E. G.; KIM, B. M. J.; SILVA, W. de F.; BATICINI, B. Ageísmo e
+												COVID-19: revisão integrativa. Research, Society and Development, v. 10,
+												n.
+												11, p. e274101119233, 31 ago. 2021.<br><br>
+
+												OFFICER, A.; DE LA FUENTE-NÚÑEZ, V. A global campaign to combat
+												ageism. Bulletin of the World Health Organization, v. 96, n. 4, p.
+												295–296, 1 abr.
+												2018.<br><br>
+
+
+												ROMERO, D.; ANDRADE, N.; MARQUES, A. P. Idadismo nos meios de
+												comunicação no contexto da pandemia de covid-19: revisão integrativa.
+												Revista
+												Eletrônica de Comunicação, Informação &amp; Inovação em Saúde, v. 18, n.
+												4, p.
+												1002–1019, 19 dez. 2024.<br><br>
+
+
+												ROMERO, D.; ANDRADE. Velho, velha? Velha é a discriminação e o idadismo
+												– Pós-tudo. Radis Comunicação e Saúde, 2023. Disponível em:
+												<a href="https://radis.ensp.fiocruz.br/opiniao/pos-tudo/velho-velha-velha-e-a-discriminacao-e-o-idadismo/"
+													style="color:blue;">https://radis.ensp.fiocruz.br/opiniao/pos-tudo/velho-velha-velha-e-a-discriminacao-e-o-idadismo/</a>
+												. Acesso em: 30 jan. 2025.<br><br>
+
+												
+												XIANG, X. et al. Modern senicide in the face of a pandemic: an
+												examination of
+												public discourse and sentiment about older adults and COVID-19 using
+												machine learning. The Journals of Gerontology: Series B, v. 76, n. 4, p.
+												e190–e200, 1 abr. 2021.<br><br>
+
+												<b>Identidade visual:</b><br><br>
+
+												Imagens: © Fiocruz imagens
+												© freepik
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Fechar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<!-- Link para abrir o modal -->
+							<li class="list-group">
+								<a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#creditosModal">
+									<i class="bi bi-info-circle"></i> Créditos
+								</a>
+							</li>
+
+							<!-- Modal -->
+							<div class="modal fade" id="creditosModal" tabindex="-1"
+								aria-labelledby="creditosModalLabel" aria-hidden="true">
+								<div class="modal-dialog  modal-xl">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="creditosModalLabel">Créditos</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+										<div class="modal-body  modal-xl">
+											<p>
+											<div class="fonteconteudo" style="color: black;">
+												<h2>Ministério da Saúde</h2>
+												<p><strong>Alexandre Padilha</strong><br>Ministro</p>
+
+												<h2>Fundação Oswaldo Cruz – Fiocruz</h2>
+												<p><strong>Mario Moreira</strong><br>Presidente</p>
+
+												<h2>Vice-Presidência de Educação, Informação e Comunicação (VPEIC)</h2>
+												<p><strong>Cristiani Vieira Machado</strong></p>
+
+												<h2>Coordenação Geral</h2>
+												<p><strong>Dalia Elena Romero Montilla</strong><br>ICICT – Instituto de
+													Comunicação e
+													Informação Científica e Tecnológica em Saúde</p>
+
+												<h2>Coordenação Técnica</h2>
+												<p><strong>Nathalia Andrade Souza</strong><br>ICICT – Instituto de
+													Comunicação e Informação
+													Científica e Tecnológica em Saúde</p>
+
+												<h2>Conteudistas</h2>
+												<ul>
+													<li>André Luiz da Silva Sobrinho</li>
+													<li>Daiany Cris Silva</li>
+													<li>Dalia Romero</li>
+													<li>José Luiz Telles de Almeida</li>
+													<li>Larissa Picinato Mazuchelli</li>
+													<li>Marcus Vinicius Borges Oliveira</li>
+													<li>Nathalia Andrade de Souza</li>
+													<li>Tatiana de Lucena Torres</li>
+												</ul>
+
+												<h2>Campus Virtual Fiocruz</h2>
+												<p><strong>Ana Cristina da Matta Furniel</strong><br>Coordenadora-geral
+												</p>
+												<p><strong>Rosane Mendes</strong><br>Coordenadora-adjunta e Coordenadora
+													da Plataforma
+													Educare</p>
+												<p><strong>Renata Bernardes David</strong><br>Coordenadora de Produção
+												</p>
+												<p><strong>Juliana Dutra</strong><br>Revisora Técnica de Conteúdo</p>
+												<p><strong>Isabela Schincariol</strong><br>Assessora de Comunicação</p>
+												<p><strong>Bruno Alexandre de Oliveira</strong><br>Desenvolvedor</p>
+												<p><strong>Adriano Lourenço</strong><br>Analista de Tecnologias
+													Educacionais</p>
+												<p><strong>Orlando Terra</strong><br>Analista de Tecnologias
+													Educacionais</p>
+
+												<h2>Recursos Educacionais</h2>
+												<p><strong>Alessandra Siqueira</strong><br>Designer Educacional</p>
+												<p><strong>Marco Macedo</strong><br>Designer Gráfico</p>
+												<p><strong>Lenon Sampaio</strong><br>Desenvolvedor</p>
+												<p><strong>Ana Paula Borges</strong><br>Revisão Ortográfica</p>
+
+												<h2>Realização</h2>
+												<p>ICICT – Instituto de Comunicação e Informação Científica e
+													Tecnológica em Saúde</p>
+
+												<h2>Apoio</h2>
+												<p>Programa Inova Fiocruz. Edital Inova Educação - Recursos Educacionais
+													Abertos.</p>
+											</div>
+											</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">Fechar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</ul>
+					</li>
+
+
+				</ul>
+			</div>
+		</nav>
+
+		<!--sidebar-->
+
+		<!-- Page Content  -->
+
+
+		<div class="container">
+			<!-- Contêiner principal para os cards -->
+
+			<br><br>
+
+			<!-- Aulas do Módulo -->
+
+
+			<div class="py-5 fontetexto">
+				<!-- Texto e Imagem do Módulo -->
+				<p id="aula3" class="fontetitulo" style=" text-align: left;"> <strong>Aula 3 - Mitos do
+					idadismo</strong>
+			</p>
+				<div class="text-center mt-5 mb-5">
+					<h2 class="fontetitulo" style="color: #4b3a64; font-size: 1.5rem;"><strong> Objetivos de aprendizagem</strong></h2>
+					<h2 class="fonteconteudo text-center" style="font-size: 16px;"> Ao final desta aula, você será
+						capaz de: </h2>
+				</div>
+				<div>
+				</div>
+				<table class="table table-bordered  mt-5 mb-5 " style="width: 100%;" data-aos="fade-up"
+					data-aos-duration="1200" data-aos-delay="150">
+	
+					<tbody>
+						
+	
+	
+						<tr style="background-color: #f2f2f2;">
+							<td style="text-align: center; vertical-align: middle;">
+								<i class="bi bi-circle-fill" style="color: #503765; font-size: 1.5rem;"></i>
+							</td>
+							<td class="fonteconteudo"> Identificar e compreender os principais estereótipos e mitos sobre o envelhecimento e as
+								pessoas idosas, analisando como esses preconceitos impactam as relações sociais;</td>
+						</tr>
+	
+	
+						<tr style="background-color: #ffffff;">
+							<td style="text-align: center; vertical-align: middle;">
+								<i class="bi bi-circle-fill" style="color: #503765; font-size: 1.5rem;"></i>
+							</td>
+							<td class="fonteconteudo">Refletir sobre a importância de combater o idadismo por meio de mudanças nas crenças pessoais
+								e nas práticas institucionais.</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+				
+
+				<p class="fonteconteudo mb-5">Como vimos anteriormente, o idadismo pode se manifestar de diversas formas
+					e
+					em
+					diferentes contextos, seja nas relações pessoais, no mercado de
+					trabalho, nos serviços de saúde ou nos meios de comunicação. No entanto,
+					o primeiro passo para seu reconhecimento e combate é identificar os estereótipos e mitos sobre o
+					envelhecimento e as pessoas idosas, que foram
+					construídos ao longo da história e, muitas vezes, ainda moldam a forma
+					como pensamos, sentimos e agimos. Essas imagens negativas estão tão
+					presentes em nosso cotidiano que, em muitos casos, nem percebemos que
+					estamos reproduzindo comportamentos idadistas.
+					Mas quais são esses mitos? Vamos conhecer alguns dos mais comuns e entender por que eles são
+					equivocados
+					e
+					prejudiciais.
+				</p>
+
+				<div class="py-5">
+					<div class="row g-4">
+						<!-- Linha 1 - Dois Flip Cards -->
+						<div class="col-md-6">
+							<div class="flip-card mb-4">
+								<div class="h-100" id="flip-card-inner-1"
+									style="box-shadow: 0 10px 20px rgba(10, 10, 10, 0.3); border-radius: 10px; transition: transform 0.6s; transform-style: preserve-3d;">
+									<div class="flip-card-front"
+										style="backface-visibility: hidden; position: relative; background-color: #4b3a64;">
+										<img src="../assets/images/carimbo.png" alt="Idosos"><br>
+										<p class="fonteconteudo mb-5" style="color: white;">
+											<strong>As pessoas idosas são frágeis e doentes</strong><br>
+											Acredita-se que todas as pessoas idosas são fisicamente frágeis e têm
+											múltiplos
+											problemas de saúde.
+										</p>
+										<button onclick="flipCard(1)" class="btn btn-primary mt-2">Clique aqui</button>
+									</div>
+									<div class="flip-card-back"
+										style="backface-visibility: hidden; transform: rotateY(180deg); position: absolute; top: 0; width: 100%; background-color: #aa82bd; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; padding: 20px; box-sizing: border-box;">
+										<p class="fonteconteudo mb-3"
+											style="text-align: center; color: white; margin-bottom: 20px;">
+											Embora o risco de certas condições de saúde aumente com a idade, muitas
+											pessoas
+											idosas são fisicamente
+											ativas e mantêm uma boa saúde.<br><br>
+										</p>
+										<button onclick="flipCard(1)" class="btn btn-secondary mt-4"
+											style="background-color: #503765;">Voltar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col-md-6">
+							<div class="flip-card mb-4">
+								<div class="h-100" id="flip-card-inner-2"
+									style="box-shadow: 0 10px 20px rgba(10, 10, 10, 0.3); border-radius: 10px; transition: transform 0.6s; transform-style: preserve-3d;">
+									<div class="flip-card-front"
+										style="backface-visibility: hidden; position: relative; background-color: #4b3a64;">
+										<img src="../assets/images/carimbo.png" alt="Idosos"><br>
+										<p class="fonteconteudo mb-5" style="white-space: normal; color: white; ">
+											<strong>As pessoas idosas são mentalmente incapazes</strong><br>
+											Existe uma crença de que todas as pessoas mais velhas sofrem de declínio
+											cognitivo severo, como a demência.
+										</p>
+										<button onclick="flipCard(2)" class="btn btn-primary mt-2">Clique aqui</button>
+									</div>
+
+
+
+									<div class="flip-card-back"
+										style="padding: 20px; text-align: justify; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; overflow-y: auto; backface-visibility: hidden; transform: rotateY(180deg); position: absolute; top: 0; width: 100%; background-color: #aa82bd;">
+										<p class="fonteconteudo mb-3"
+											style="text-align: center; color: white; margin-bottom: 20px;">
+											Embora a incidência de demência aumente com a idade, a grande maioria das
+											pessoas idosas
+											mantém suas capacidades cognitivas. Além disso, estudos revelam que muitas
+											pessoas idosas são independentes
+											em suas atividades diárias...
+										</p>
+										<button onclick="flipCard(2)" class="btn btn-secondary mt-2"
+											style="background-color: #503765;">Voltar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="flip-card mb-4">
+								<div class="h-100" id="flip-card-inner-3"
+									style="box-shadow: 0 10px 20px rgba(10, 10, 10, 0.3); border-radius: 10px; transition: transform 0.6s; transform-style: preserve-3d;">
+									<div class="flip-card-front"
+										style="backface-visibility: hidden; position: relative; background-color: #4b3a64;">
+										<img src="../assets/images/carimbo.png" alt="Idosos"><br>
+										<p class="fonteconteudo mb-5 card-text "
+											style="white-space: normal; color: white;"><strong>Os
+												idosos são um peso para a sociedade</strong><br>
+											A visão de que as pessoas idosas não contribuem de maneira significativa
+											para a
+											sociedade...
+										</p>
+										<button onclick="flipCard(3)" class="btn btn-primary mt-2  ">Clique
+											aqui</button>
+									</div>
+
+
+									<div class="flip-card-back"
+										style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; overflow-y: auto; backface-visibility: hidden; transform: rotateY(180deg); position: absolute; top: 0; width: 100%; background-color: #aa82bd;">
+										<p class="fonteconteudo mb-3"
+											style="text-align: center; color: white; margin-bottom: 20px; white-space: normal; word-wrap: break-word;">
+											As pessoas idosas fazem contribuições significativas para a sociedade...
+										</p>
+										<button onclick="flipCard(3)" class="btn btn-secondary mt-2"
+											style="background-color: #503765;">Voltar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-6">
+							<div class="flip-card">
+								<div class="h-100" id="flip-card-inner-4"
+									style="box-shadow: 0 10px 20px rgba(10, 10, 10, 0.3); border-radius: 10px; transition: transform 0.6s; transform-style: preserve-3d;">
+									<div class="flip-card-front"
+										style="backface-visibility: hidden; position: relative; background-color: #4b3a64;">
+										<img src="../assets/images/carimbo.png" alt="Idosos"><br>
+										<p class="fonteconteudo mb-5 card-text "
+											style="white-space: normal; color: white; text-align: center;">
+											<strong>Pessoas idosas são menos produtivas e resistentes às novas
+												tecnologias.</strong><br> Muitas pessoas acreditam que...
+										</p>
+										<div class="mb-3 mt-5"><button onclick="flipCard(4)"
+												class="btn btn-primary mt-2">Clique aqui</button></div>
+
+									</div>
+
+
+									<div class="flip-card-back"
+										style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; overflow-y: auto; backface-visibility: hidden; transform: rotateY(180deg); position: absolute; top: 0; width: 100%; background-color: #aa82bd;">
+										<p class="fonteconteudo mb-3"
+											style="text-align: center; color: white; margin-bottom: 20px; white-space: normal; word-wrap: break-word;">
+											Apesar da grande maioria das empresas no Brasil não possuírem políticas
+											específicas para
+											combater a discriminação etária... </p>
+										<button onclick="flipCard(4)" class="btn btn-secondary mt-2"
+											style="background-color: #503765;">Voltar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row g-4 mt-3">
+					<!-- Linha 2 - Dois Flip Cards -->
+
+				</div>
+
+				<script>
+					function flipCard(cardNumber) {
+						const card = document.getElementById(`flip-card-inner-${cardNumber}`);
+						card.style.transform = card.style.transform === "rotateY(180deg)" ? "rotateY(0deg)" : "rotateY(180deg)";
+					}
+				</script>
+
+
+
+
+				<div class=" mb-5 ">
+
+					<div>
+
+
+
+						<p class=" fonteconteudo mb-3 ">É importante refletirmos sobre como os estereótipos e mitos
+							sobre as
+							pessoas idosas
+							ainda afetam nosso cotidiano, especialmente no ambiente de
+							trabalho. Combatê-los é fundamental para garantir um mercado de trabalho mais inclusivo e
+							justo
+							para todos,
+							independentemente da idade.
+							A luta contra o idadismo é um desafio que envolve a todos nós. Para realmente avançarmos, é
+							fundamental
+							entender o idadismo, mudar nossa visão e transformar nossos comportamentos em relação ao
+							envelhecimento.
+							Afinal, todos queremos envelhecer com dignidade e respeito. Mas podemos
+							ir além: sejamos agentes de mudança, assumindo a responsabilidade de
+							combater o idadismo no nosso dia a dia. E então? Vamos juntos nessa jornada?
+						</p>
+
+					</div>
+
+					<div class="col-12 mt-4">
+						<div class="card" style="box-shadow: 0 10px 10px rgba(10, 10, 10, 0.3); border-radius: 10px;"
+							data-aos="fade-up">
+
+							<div class="card-body pt-0 ">
+
+								<img src="../assets/images/box_questionamento.png" alt="Questionamento" style="
+							width: 83px;
+							margin-left: -44px;
+							margin-top: -18px;
+							position: absolute;
+							z-index: 9999;
+				">
+								<div class="col-md-6 col-12 text-title-responsive"
+									style="background-color: #36254e; height: 55px; align-content: center;">
+									<span class="fontetitulo text-white fw-bold d-block"
+										style=" margin-left: 34px;">Questionamento</span>
+								</div>
+
+							</div>
+
+							<p class=" card-tex fonteconteudo m-4 mb-5 ">O idadismo está presente em muitos aspectos da
+								nossa
+								vida cotidiana, e sua superação depende de mudanças nas nossas crenças, nas normas das
+								instituições e nas atitudes de cada um. O primeiro passo é reconhecer as diversas formas
+								de idadismo e compreender como ele impacta a vida das pessoas idosas. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" mb-4  mt-4;">
+				<h2 class=" mt-6 mb-4"><strong>Exercício de Fixação</strong></h2>
+			</div>
+
+
+			<div class="container-fluid fonteconteudo" style="background-color: #ececec;">
+
+
+				<form id="quiz-form">
+					<!-- Questão 1 -->
+					<div class="mb-4">
+						<p class="fonteconteudo"><strong>1. O que é idadismo?</strong></p>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+							<label class="form-check-label fonteconteudo" for="q1a">Um processo biológico inevitável do
+								envelhecimento.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+							<label class="form-check-label fonteconteudo" for="q1b">Discriminação baseada na idade, que
+								afeta principalmente pessoas idosas.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+							<label class="form-check-label fonteconteudo" for="q1c">Exclusivamente uma questão genética
+								relacionada ao envelhecimento.</label>
+						</div>
+						<div id="feedback-q1" class="mt-2"></div>
+					</div>
+
+					<!-- Questão 2 -->
+					<div class="mb-4">
+						<p class="fonteconteudo"> <strong> 2. Qual dos seguintes exemplos é uma manifestação do
+								idadismo?</strong></p>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+							<label class="form-check-label fonteconteudo" for="q2a">Incentivo à participação ativa de
+								idosos
+								na sociedade.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+							<label class="form-check-label fonteconteudo" for="q2b">Oferecimento de tratamento médico
+								adequado para todas as idades.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+							<label class="form-check-label fonteconteudo" for="q2c">Exclusão de pessoas idosas em
+								processos
+								seletivos de emprego.</label>
+						</div>
+						<div id="feedback-q2" class="mt-2"></div>
+					</div>
+
+					<!-- Questão 3 -->
+					<div class="mb-4">
+						<p class="fonteconteudo"><strong> 3. Como a Revolução Industrial influenciou a percepção sobre a
+								velhice?</strong> </p>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+							<label class="form-check-label fonteconteudo" for="q3a">Aumentou a valorização da
+								experiência
+								das pessoas idosas.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+							<label class="form-check-labe fonteconteudo" for="q3b">Tornou as pessoas idosas menos úteis
+								na economia industrializada.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+							<label class="form-check-label fonteconteudo" for="q3c">Criou políticas públicas de
+								valorização dos idosos.</label>
+						</div>
+						<div id="feedback-q3" class="mt-2"></div>
+					</div>
+
+					<!-- Questão 4 -->
+					<div class="mb-4">
+						<p class="fonteconteudo"><strong>4. Qual é um mito comum relacionado às pessoas idosas?</strong>
+						</p>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+							<label class="form-check-label fonteconteudo" for="q4a">Elas são incapazes de aprender novas
+								tecnologias.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+							<label class="form-check-label fonteconteudo" for="q4b">Elas são fundamentais para a
+								transmissão
+								de conhecimento.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+							<label class="form-check-label fonteconteudo" for="q4c">Elas são saudáveis e independentes
+								em
+								sua maioria.</label>
+						</div>
+						<div id="feedback-q4" class="mt-2"></div>
+					</div>
+
+					<!-- Questão 5 -->
+					<div class="mb-4">
+						<p class="fonteconteudo"><strong>5. Quem criou o termo “idadismo”?</strong></p>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+							<label class="form-check-label fonteconteudo" for="q5a">Simone de Beauvoir.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+							<label class="form-check-label fonteconteudo" for="q5b">Norbert Elias.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+							<label class="form-check-label fonteconteudo" for="q5c">Dr. Robert Butler.</label>
+						</div>
+						<div id="feedback-q5" class="mt-2"></div>
+					</div>
+
+
+					<button type="button" class=" btn-custom mb-5" style="width: 118px;"
+						onclick="checkAnswers()">Enviar</button>
+				</form>
+
+			</div>
+
+
+
+
+			<div class="row mt-5">
+				<div class="col-6 text-left">
+					<button class="btn btn-primary" onclick="rolarPagina()">Aula 2</button>
+
+				</div>
+
+				<div class="col-6 text-right">
+
+					<button class="btn btn-primary" onclick="rolarPaginamod2()">Módulo 2</button>
+				</div>
+
+			</div>
+
+			<script>
+
+				function rolarPagina() {
+					window.location.href = "../modulo1/aula2.html"; // Isso redireciona o navegador para aula1.html
+				}
+
+				function rolarPaginamod2() {
+					window.location.href = "../modulo2/apresentacao2.html"; // Isso redireciona o navegador para aula1.html
+				}
+
+
+				function rolarPagina2() {
+					document.getElementById("aula2").scrollIntoView({ behavior: "smooth" });
+				}
+
+			</script>
+
+
+<style>
+
+
+.feedback-box {
+  background-color: #f0f4ff;
+  border-left: 5px solid #8867bd;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+</style>
+
+
+
+<script>
+	const correctAnswers = {
+		q1: 'b',
+		q2: 'c',
+		q3: 'b',
+		q4: 'a',
+		q5: 'c'
+	};
+
+	const feedbackMessages = {
+	q1: {
+		a: '<div class="feedback-box">Quase lá! O envelhecimento é, de facto, um processo biológico natural, mas o idadismo refere-se a atitudes e comportamentos discriminatórios baseados na idade, e não ao processo físico de envelhecer. Retorne à aula 1 e tente novamente.</div>',
+		b: '<div class="feedback-box">Correta! O idadismo é uma forma de preconceito ou discriminação com base na idade, sendo mais comum contra pessoas idosas. Pode manifestar-se de várias formas, como estereótipos negativos, atitudes desrespeitosas ou exclusão social.</div>',
+		c: '<div class="feedback-box">Pense melhor! O idadismo não é uma questão genética. Trata-se de uma construção social e cultural que influencia a forma como as pessoas mais velhas são vistas e tratadas na sociedade. Retorne à aula 1 e tente novamente.</div>'
+	},
+	q2: {
+		a: '<div class="feedback-box">Pense melhor! O incentivo à participação ativa dos idosos é, na verdade, uma prática positiva que combate o idadismo, promovendo inclusão e valorização das pessoas mais velhas. Retorne à aula 2 e tente novamente.</div>',
+		b: '<div class="feedback-box">Não foi dessa vez. Garantir tratamento médico adequado para todas as idades é um exemplo de equidade e respeito, contrariando atitudes idadistas. Retorne à aula 2 e tente novamente.</div>',
+		c: '<div class="feedback-box">Correta! Esta é uma clara manifestação de idadismo. Negar oportunidades de trabalho com base apenas na idade é uma forma de discriminação que afeta negativamente o bem-estar e os direitos das pessoas idosas.</div>'
+	},
+	q3: {
+		a: '<div class="feedback-box">Pense melhor! A Revolução Industrial trouxe uma valorização crescente da produtividade física e da força de trabalho jovem, o que acabou por desvalorizar a experiência e o papel tradicional das pessoas idosas. Retorne à aula 2 e tente novamente.</div>',
+		b: '<div class="feedback-box">Correta! Com o foco na força física e na rapidez exigidas pela nova economia industrial, muitos passaram a considerar os idosos menos produtivos, o que levou à sua marginalização no mundo do trabalho.</div>',
+		c: '<div class="feedback-box">Quase lá! As políticas públicas voltadas especificamente para os idosos surgiram muito depois, como resposta à exclusão social resultante, em parte, das mudanças provocadas pela industrialização. Retorne à aula 2 e tente novamente.</div>'
+	},
+	q4: {
+		a: '<div class="feedback-box">Correta! Este é um dos mitos mais comuns. Apesar de algumas dificuldades iniciais, muitas pessoas idosas aprendem e usam novas tecnologias com sucesso, desde que tenham acesso e apoio adequado.</div>',
+		b: '<div class="feedback-box">Quase lá! Embora esta afirmação seja verdadeira, não representa um mito, mas sim uma realidade. Pessoas idosas têm um papel importante na preservação da memória cultural e no ensino intergeracional. Retorne à aula 3 e tente novamente.</div>',
+		c: '<div class="feedback-box">Pense melhor! Embora esta afirmação seja baseada em dados reais e não um mito. Hoje em dia, muitos idosos mantêm um estilo de vida ativo, saudável e autónomo. Retorne à aula 3 e tente novamente.</div>'
+	},
+	q5: {
+		a: '<div class="feedback-box">Não foi dessa vez! Simone de Beauvoir escreveu sobre a velhice em "A Velhice" (1970), mas não foi ela quem criou o termo "idadismo". Retorne à aula 2 e tente novamente.</div>',
+		b: '<div class="feedback-box">Pense melhor! Norbert Elias analisou as mudanças sociais em torno da velhice, mas o termo "idadismo" não foi cunhado por ele. Retorne à aula 2 e tente novamente.</div>',
+		c: '<div class="feedback-box">Correta! O termo "idadismo" (ou ageism em inglês) foi criado por Robert Butler, médico e gerontólogo, em 1969, para descrever o preconceito e a discriminação contra pessoas com base na idade.</div>'
+	}
+};
+
+
+
+
+
+
+
+	function checkAnswers() {
+		Object.keys(correctAnswers).forEach(question => {
+			const selectedOption = document.querySelector(`input[name='${question}']:checked`);
+			const feedbackElement = document.getElementById(`feedback-${question}`);
+			feedbackElement.innerHTML = ''; // Limpa feedback anterior
+
+			if (selectedOption) {
+				const value = selectedOption.value;
+				const label = selectedOption.parentElement.querySelector('label');
+				if (value === correctAnswers[question]) {
+					label.classList.add('text-success');
+				} else {
+					label.classList.add('text-danger');
+				}
+
+				if (feedbackMessages[question] && feedbackMessages[question][value]) {
+					feedbackElement.innerHTML = `<span>${feedbackMessages[question][value]}</span>`;
+				} else {
+					feedbackElement.innerHTML = `<span class="text-success">A resposta correta é: ${document.querySelector(`label[for='${question + correctAnswers[question]}']`).textContent.trim()}</span>`;
+				}
+			} else {
+				feedbackElement.innerHTML = '<span class="text-warning">Selecione uma opção.</span>';
+			}
+		});
+	}
+</script>
+
+			<footer class="text-dark text-center py-4" style="background-color:white;">
+				<div>
+
+
+					<h5 class="fonteconteudo" style="text-align: center; font-size: small;">Realização: </h5>
+
+					<!-- Imagem inteira para PC -->
+					<img src="../assets/images/regua_de_logos.png" alt="Banner responsivo"
+						class="img-fluid mb-3 d-none d-md-block"
+						style="max-width: 100%; height: auto; object-fit: contain;" data-aos="fade-up"
+						data-aos-once="false" data-aos-anchor-placement="top-bottom">
+
+				</div>
+
+
+				<!-- 3 divs com 2 logos cada para celular -->
+				<div class="row d-md-none justify-content-center">
+					<div class="col-12 mb-3 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+						<img src="../assets/images2/logos_Mobile.png" alt="Logo 2" class="mx-auto"
+							style="max-width: 100%; width: 100%; max-width: 800px; height: auto;">
+					</div>
+
+				</div>
+
+			</footer>
+
+		</div>
+
+	</div>
+
+	</div>
+
+	<script src="../js/quest.js"></script>
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76A9YKE6E67AN8eGeRkzZXI2dD/rO7z4pHR1hj9MEYIjtQUOhcWr7x9gL8BGc2x"
+		crossorigin="anonymous"></script>
+	<!-- Rodapé -->
+
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1200, // Duração da animação em milissegundos
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$(".dropdown-toggle").click(function () {
+				var target = $(this).attr("href"); // Obtém o ID do submenu clicado
+
+				// Fecha todos os submenus, exceto o que foi clicado
+				$(".list-group ul").not($(target)).collapse("hide");
+			});
+		});
+	</script>
+</body>
+
+</html>

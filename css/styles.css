@@ -1,0 +1,467 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, main, .module, .module-content, .module-text {
+  background: url('/assets/img/titulo.png') no-repeat center center/cover;
+  
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  
+}
+
+header img {
+  margin: 0; /* Remove margem da imagem */
+  padding: 0; /* Remove padding da imagem */
+  display: block; /* Remove espaço extra gerado por imagens inline */
+}
+
+
+
+
+
+
+
+.navbar {
+position: absolute; /* Posiciona a nav bar sobre a imagem */
+top: 39px; /* Distância do topo da imagem */
+left: 0;
+right: 0;
+display: flex;
+justify-content: flex-end;
+gap: 30px;
+z-index: 10; /* Garante que a barra de navegação fique acima da imagem */
+background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+padding: 10px 0;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+
+transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+color: #00adef; /* Muda a cor ao passar o mouse */
+}
+
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #000000;
+}
+
+.course-structure {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.course-structure img {
+  width: 80px;
+  height: auto;
+}
+
+.modules {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px; /* Espaçamento entre os módulos */
+}
+
+.module {
+width: 500px;  /* Largura aumentada */
+height: 150px; /* Altura aumentada */
+background: linear-gradient(90deg, #4E3A66);
+display: flex;
+align-items: center;
+justify-content: flex-start; /* Alinhamento dos itens para o início */
+border-radius: 8px;
+margin: -6px auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+padding: 0 15px; /* Adicionando espaçamento interno */
+box-sizing: border-box; /* Garante que o padding não afete as dimensões do módulo */
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.module:hover .module-content {
+transform: scale(1.05); /* Efeito de aumento no conteúdo */
+}
+
+
+.module-content {
+display: contents;
+align-items: center;
+color: white;
+font-family: Verdana, sans-serif;
+flex-wrap: wrap; /* Permite que o conteúdo quebre linha se necessário */
+width: 100%;
+padding: 10px;
+transition: all 0.3s ease; 
+}
+
+.module-number {
+font-size: 75px;
+font-weight: bold;
+margin-right: 15px; /* Aumentando o espaço entre o número e o texto */
+position: relative;
+}
+
+.vertical-line {
+width: 2px;
+height: 100px; /* Aumentando a altura da linha para se ajustar ao módulo */
+background-color: white;
+margin-right: 15px; /* Aumentando o espaço entre a linha e o texto */
+}
+
+.module-text {
+font-size: 12px; /* Ajustando o tamanho da fonte para caber melhor */
+}
+
+.module-text p {
+margin: 0;
+line-height: 1.2;
+
+
+}
+
+
+
+
+.module:hover {
+background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+
+.module footer {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.192); /* Sombra no rodapé do módulo */
+  padding: 10px;
+  background-color: #0000005d; /* Cor de fundo opcional */
+  text-align: center; /* Centraliza os botões no rodapé */
+}
+
+.module:nth-child(1) {
+  background-color: #4b3a64;
+}
+
+.module:nth-child(2) {
+  background-color: #5c8ebf;
+}
+
+.module:nth-child(3) {
+  background-color: #223669;
+}
+
+.module:nth-child(4) {
+  background-color: #6c2164;
+}
+
+.module:nth-child(5) {
+  background-color: #b9683b;
+}
+
+.module:nth-child(6) {
+  background-color: #b9683b;
+}
+
+.module h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.module button:not(.button-transparent) {
+  background-color: #00adef;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.module button:not(.button-transparent):hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #4b3a64;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+.button-transparent {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-transparent:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #00adef;
+}
+
+p {
+  text-align: left;
+}
+
+.study-advice {
+  text-align: center;
+}
+
+/* Estilos adicionais para tornar a imagem responsiva */
+img.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+img.linha {
+  width: 300px; /* Tamanho fixo, pode ajustar conforme necessário */
+  height: auto; /* Preserva a proporção */
+}
+
+.center-text {
+  text-align: initial;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 76px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+  color: #2c3e50;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.imagem {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.font-source {
+  font-size: 0.9em;
+  color: #00e1f1;
+}
+.lista {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.autores, .objetivos {
+  margin-top: 30px;
+}
+
+.box {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #0051ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.textbox {
+  color: #ffffff;
+}
+
+.bodycard{
+  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  
+}
+
+.card-container {
+  perspective: 1000px; /* Cria a sensação de profundidade */
+}
+
+.card {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 80vw; /* Largura do card em função da largura da tela */
+  max-width: 480px; /* Largura máxima */
+  height: auto;
+  aspect-ratio: 1; /* Mantém a proporção 1:1 */
+  cursor: pointer;
+  transform-style: preserve-3d; /* Mantém o conteúdo no espaço 3D */
+  transition: transform 0.6s; /* Anima a rotação */
+}
+
+.card.flipped {
+  transform: rotateY(180deg); /* Gira o card 180 graus ao ser clicado */
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta o verso quando ele estiver virado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.front {
+  background-color: #c4c4c4; /* Frente do card */
+}
+
+.back {
+  background-color: #2ecc71; /* Verso do card */
+  transform: rotateY(180deg); /* Inicialmente o verso está virado para trás */
+}
+
+/* Estilos para a imagem */
+.front img {
+  width: 37%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.textcard {
+ width: 274px;
+
+}
+
+
+.h4 {
+color: #0056b3;
+
+
+}
+.h1titulo {
+  color: #000000;
+  text-align: -webkit-center;
+  
+  
+  }
+
+
+  .box1 {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #6d6d6d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  }
+
+  .timeline {
+    border-left: 1px solid hsl(207, 100%, 50%);
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline .timeline-item {
+    position: relative;
+  }
+  
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline .timeline-item:after {
+    background-color: hsl(207, 100%, 50%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
+
+  /* Estilos para telas de computador */
+.saibamaispc {
+  width: 60%;
+}
+
+/* Estilos para telas de celular */
+@media only screen and (max-width: 700px) {
+  .celsaiba {
+      width: 100%;
+  }
+}
+
+.container2{
+  background-color: #5a4974;
+  height: 500px;
+ border-radius: 10px;
+
+}
+
+.justify-content-center{
+  justify-content: center !important
+}
+
+.rotate-icon {
+  transition: transform 0.3s ease; /* Suave transição */
+}
+.collapsed + .rotate-icon {
+  transform: rotate(0deg); /* Posição inicial */
+}
+.rotate-icon {
+  transform: rotate(-180deg); /* Rotação para expandido */
+}
